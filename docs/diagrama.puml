@@ -1,0 +1,120 @@
+@startuml
+
+class Usuario {
+    + Controlar()
+    + Elegir()
+}
+class Personaje {
+    + Mover()
+    + Atacar()
+}
+class Villano{
+    + Disparar()
+    + ReducirVida()
+    + Vencer()
+}
+class Cuphead{
+    + MoverDerecha()
+    + MoverAbajo()
+    + MoverIzquierda()
+    + MoverDerecha()
+    + Disparar()
+    + Colectar()
+    + GolpearCombo()
+    + ReducirVida()
+}
+
+class Cagney{
+    + LanzarEnredadera()
+    + LanzarSemilla()
+}
+
+class Cala{
+    + LanzarAnimal()
+    + LanzarBomba()
+    + Petrificar()
+    + CambiarForma()
+}
+
+class Hilda{
+    + LanzarBomba()
+    + LanzarEstrella()
+    + CambiarForma()
+    + Reir()
+}
+
+Class Bala{
+    + Danar()
+} 
+class Mapa{
+    + CambiarEscenario()
+}
+class MapaCala
+class MapaHilda
+class MapaCagney
+
+class Plataforma{
+    + PermitirSubir()
+}
+
+class Sonido{
+    + Activar()
+}
+class Nivel{
+    + CambiarDificultad()
+    + CambiarMapa()
+    + CambiarEscenario()
+}
+class Animacion {
+    + Mostar()
+    + Activar()
+}
+class Puntaje {
+    + Indicar()
+    + AcumularPuntaje()
+}
+class Carta {
+    + Acumular()
+    + ActivarCombo()
+}
+class Vida 
+class Arma{
+    + Disparar()
+}
+class Avioneta{
+    + Volar()
+}
+class Bomba{
+    + Explotar()
+}
+Cuphead --|> Personaje
+Villano --|> Personaje
+Hilda --|> Villano
+Cagney --|> Villano
+Cala --|> Villano
+Mapa --|> Nivel
+MapaCagney --|> Mapa
+MapaCala --|> Mapa
+MapaHilda --|> Mapa
+
+Personaje *-- Sonido
+Personaje *-- Animacion  
+Mapa *-- Sonido 
+Nivel *-- Personaje
+Personaje *-- Vida
+Nivel *-- Puntaje
+Nivel *-- Animacion
+Personaje *-- Arma 
+MapaCala *-- Avioneta
+MapaHilda *-- Avioneta
+MapaCagney *-- Plataforma
+
+
+Usuario o-- Personaje
+Personaje o-- Arma
+Personaje o-- Bomba
+Arma o-- Bala
+Cuphead o-- Carta
+Cuphead o-- Avioneta
+
+@enduml

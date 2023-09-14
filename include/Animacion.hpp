@@ -1,3 +1,4 @@
+
 class Animacion
 {
 private:
@@ -8,3 +9,4 @@ public:
     void Mostrar() {}
     void Activar() {}
 };
+

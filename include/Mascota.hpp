@@ -8,7 +8,7 @@ private:
 
 public:
     Mascota(std::string nombre) {
-        this -> 0;
+        this -> hambre = 0;
         this -> nombre = nombre;
     }
     ~Mascota() {}
