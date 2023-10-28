@@ -1,5 +1,19 @@
-#include <string>
+
 class Cuphead
+{
+private:
+   /* data */
+public:
+   Cuphead(/* args */) {}
+   ~Cuphead() {}
+};
+
+
+
+
+
+
+/*class Cuphead
 {
 private:
     std::string nombreUsuario;
@@ -15,21 +29,21 @@ public:
     }
     ~Cuphead() {}
     void Mover() {}
-    void Disparar(/*int danoVillano*/)
-    {
+    void Disparar(/*int danoVillano*///)
+  //  {
        // this->bala -= danoVillano;
-    }
-    int Colectar(/*int cartaEncontrada*/)
-    {
+   // }
+    //int Colectar(/*int cartaEncontrada*/)
+    //{
        // this->carta += cartaEncontrada;
        // return this->carta;
-    }
-    void GolpearCombo()
-    {
+    //}
+    //void GolpearCombo()
+    //{
        // this->carta = 3;
-    }
-    void ReducirVida(int danoEfectuado)
-    {
+    //}
+    //void ReducirVida(int danoEfectuado)
+   // {
        // this->vida -= danoEfectuado;
-    }
-};
+   // }
+//};

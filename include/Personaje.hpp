@@ -5,6 +5,4 @@ private:
 public:
     Personaje(/* args */) {}
     ~Personaje() {}
-    void Mover() {}
-    void Atacar() {} //////////////////////// int o boolean?
 };
