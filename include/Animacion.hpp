@@ -61,8 +61,7 @@ public:
             mvaddstr(
                 y_linea + 1,
                 this->x,
-                linea.c_str()
-                );
+                linea.c_str());
         }
         archivo.clear();
         archivo.seekg(0);

@@ -11,11 +11,11 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     Ventana v;
-    Animacion mapaCagney(70,20,"mapaCagney");
-    Animacion mapaCagney2(35,20,"mapaCagney");
-    Animacion cuphead(0,15,"cuphead");
-   Animacion cagney(100,5,"cagney");
-   Animacion bala(0,15,"bala");
+    Animacion mapaCagney(70, 20, "mapaCagney");
+    Animacion mapaCagney2(35, 20, "mapaCagney");
+    Animacion cuphead(0, 15, "cuphead");
+    Animacion cagney(100, 5, "cagney");
+    Animacion bala(0, 15, "bala");
 
     bool ejecucion = true;
     while (ejecucion)
@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
         {
             cagney.AvanzarEnX(1);
         }
-          if (getch() == KEY_UP)
+        if (getch() == KEY_UP)
         {
             cagney.SubirEnY(1);
         }
@@ -62,7 +62,6 @@ int main(int argc, char const *argv[])
         {
             bala.Disparar(90);
         }
-    
 
         // ciclo de dibujo
         clear();
@@ -73,7 +72,7 @@ int main(int argc, char const *argv[])
         bala.Mostrar();
         cagney.Mostrar();
         refresh();
-        usleep(41000); // 24 frames por segundo
+        usleep(41000); 
     }
     return 0;
 }

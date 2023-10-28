@@ -10,6 +10,7 @@ private:
     bool ejecucion;
     int velocidad;
     int contador;
+
 public:
     Ventana()
     {
@@ -22,11 +23,11 @@ public:
         cbreak();
         timeout(100);
         noecho();
-        keypad(stdscr,TRUE);
+        keypad(stdscr, TRUE);
     }
     void Iniciar()
     {
-        this->ejecucion=true;
+        this->ejecucion = true;
         while (this->ejecucion)
         {
             this->Actualizar();
@@ -38,7 +39,7 @@ public:
 
     void Actualizar()
     {
-        this->contador = this->contador-1;
+        this->contador = this->contador - 1;
         this->contador = this->contador - 1;
         if (this->contador == 0)
         {
