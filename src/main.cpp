@@ -50,6 +50,14 @@ int main(int argc, char const *argv[])
         {
             cagney.AvanzarEnX(1);
         }
+          if (getch() == KEY_UP)
+        {
+            cagney.SubirEnY(1);
+        }
+        if (getch() == KEY_DOWN)
+        {
+            cagney.BajarEnY(1);
+        }
         if (getch() == 'g')
         {
             bala.Disparar(90);
@@ -59,10 +67,10 @@ int main(int argc, char const *argv[])
         // ciclo de dibujo
         clear();
         v.Mostrar();
-        cuphead.Mostrar();
-        bala.Mostrar();
         mapaCagney.Mostrar();
         mapaCagney2.Mostrar();
+        cuphead.Mostrar();
+        bala.Mostrar();
         cagney.Mostrar();
         refresh();
         usleep(41000); // 24 frames por segundo
